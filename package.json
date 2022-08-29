@@ -1,6 +1,6 @@
 {
-  "name": "react-native-reactnative-practica",
-  "version": "1.0.0",
+  "name": "aplicacion-practica",
+  "version": "1.0.2",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -11,11 +11,12 @@
   "dependencies": {
     "expo": "~46.0.9",
     "expo-status-bar": "~1.4.0",
-    "react": "18.0.0",
-    "react-native": "0.69.4"
+    "react": "18.2.0",
+    "react-native": "0.69.5",
+    "expo-updates": "~0.14.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.18.13"
   },
   "private": true
 }
