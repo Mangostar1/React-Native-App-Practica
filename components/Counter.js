@@ -43,7 +43,8 @@ export default function Counter(props) {
 
 const styles = StyleSheet.create({
     Cuenta: {
-        fontSize: 24,
+        fontSize: 34,
+        fontWeight: 'bold',
         textAlign: 'center',
         backgroundColor: '#96E8FF',
         paddingVertical: 1,
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
     }, btnContent: {
         flexDirection: "row",
     }, btnTest: {
-        paddingHorizontal: '11.2%',
+        paddingHorizontal: '11.6%',
         paddingVertical: 10,
         backgroundColor: '#841584',
     }, textBtn: {

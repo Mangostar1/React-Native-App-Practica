@@ -52,7 +52,7 @@ const styleClock = StyleSheet.create({
         backgroundColor: '#FFA76A',
         paddingHorizontal: 10,
         paddingVertical: 2,
-        marginTop: 20
+        marginTop: 0
     },
     textClock: {
         fontSize: 30,
