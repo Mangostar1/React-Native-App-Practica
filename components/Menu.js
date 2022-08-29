@@ -29,39 +29,52 @@ export default function Menu(props) {
 
     return (
         <View>
-            <TouchableOpacity onPress={view}>
-                <Image source={menuIcon}/>
+            <View style={styles.menuContent}>
+                <TouchableOpacity onPress={view} style={styles.menuBtn}>
+                    <Image source={menuIcon}/>
 
-                { viewMenu === true ?
+                    { viewMenu === true ?
 
-                    <Modal
-                        transparent={true}
-                        animationType="fade"
-                    >   
-                        <View style={styles.modalMenu}>
-                            <TouchableOpacity onPress={close} style={styles.closeBtn}>
-                                <Image source={closeImg} />
-                            </TouchableOpacity>
-                            <Button title="Contador" onPress={item1} />
-                            <Button title="Capturador" onPress={item2} />
-                        </View>
-                    </Modal>
+                        <Modal
+                            transparent={true}
+                            animationType="fade"
+                        >   
+                            <View style={styles.modalMenu}>
+                                <TouchableOpacity onPress={close} style={styles.closeBtn}>
+                                    <Image source={closeImg} />
+                                </TouchableOpacity>
+                                <Button title="Contador" onPress={item1} />
+                                <Button title="Capturador" onPress={item2} />
+                            </View>
+                        </Modal>
 
-                : null }
+                    : null }
 
-            </TouchableOpacity>
-            { item === 0 ? <Counter /> : <Clock /> }
+                </TouchableOpacity>
+            </View>
+            <View>
+                { item === 0 ? <Counter /> : <Clock /> }
+            </View>
             <StatusBar style="auto" />
         </View>
     );
 }
 
 const styles = StyleSheet.create({
+    menuContent: {
+        backgroundColor: '#4BBDFF',
+        paddingTop: '12%',
+        paddingBottom: '2%'
+    },
+    menuBtn: {
+        marginLeft: '5%'
+    },
     modalMenu: {
         width:'85%',
         height: '100%',
         backgroundColor: '#F6F6F6',
-    }, closeBtn: {
+    }, 
+    closeBtn: {
         marginLeft: '84%'
     }
 });
